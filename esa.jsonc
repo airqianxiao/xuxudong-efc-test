@@ -10,7 +10,7 @@
   },
 
   // 按用例切换取值：true / false / 路由列表(如 ["/api/*", "!/api/health"]) / 空列表 []
-   "edgeFunctionFirst": false,
+   "edgeFunctionFirst": ["/api/*"],
 
   "regionFunction": {
     // 基础版固定 1c2g；2c4g 仅高级版/企业版可用，按当前套餐填
