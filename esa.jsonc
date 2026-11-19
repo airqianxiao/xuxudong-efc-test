@@ -1,11 +1,5 @@
 {
   "name": "xuxudong-efc-test",
-
-  // EdgeFunction 入口：必须真实存在。
-  // 对应用例1-4：缺 entry 或 entry 路径错误时，只要配置了 edgeFunctionFirst 就构建失败。
-  // 本仓库边缘函数放在 routine/ 下（原模板示例是 ./src/index.js，按本仓库目录改为 routine/）。
-  // "entry": "./routine/index.js",
-
   "installCommand": "npm install",
 
   "assets": {
@@ -16,7 +10,7 @@
   },
 
   // 按用例切换取值：true / false / 路由列表(如 ["/api/*", "!/api/health"]) / 空列表 []
-   "edgeFunctionFirst": '',
+   "edgeFunctionFirst": true,
 
   "regionFunction": {
     // 基础版固定 1c2g；2c4g 仅高级版/企业版可用，按当前套餐填
